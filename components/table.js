@@ -75,7 +75,6 @@ export const Table = ({
     }
   };
 
-  // if (data !== undefined) {
   return (
     <>
       <table className={styles.table}>
@@ -245,7 +244,6 @@ export const Table = ({
       </table>
     </>
   );
-  // }
 };
 
 export default Table;
