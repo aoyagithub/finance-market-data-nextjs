@@ -1,0 +1,26 @@
+{
+  "name": "finance-market-data-nextjs",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "chart.js": "^3.8.0",
+    "chartjs-plugin-crosshair": "^1.2.0",
+    "cors": "^2.8.5",
+    "dayjs": "^1.11.3",
+    "next": "12.1.6",
+    "react": "18.1.0",
+    "react-chartjs-2": "^4.2.0",
+    "react-dom": "18.1.0"
+  },
+  "devDependencies": {
+    "eslint": "8.17.0",
+    "eslint-config-next": "12.1.6"
+  }
+}

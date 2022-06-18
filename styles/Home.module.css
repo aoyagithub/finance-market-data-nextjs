@@ -1,0 +1,65 @@
+.h1 {
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  font-size: 32px;
+  background-color: #f6f2f3;
+  border-bottom: 1px solid #d9d9d9;
+  margin: 0 0 20px;
+  padding: 10px 0;
+  width: 100%;
+}
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f6f2f3;
+  border-top: 1px solid #d9d9d9;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+.h2 {
+  margin: 0;
+  font-size: 16px;
+}
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.h3 {
+  margin-top: 0;
+  margin-bottom: 6px;
+  font-size: 18px;
+}
+.selectArea {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.chartArea {
+  height: 238px;
+  margin-bottom: 30px;
+}
+.mainItem {
+  width: 50%;
+}
+@media (max-width: 768px) {
+  .heading {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+  .main {
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+  .mainItem {
+    width: 100%;
+  }
+  .chartArea {
+    height: 185px;
+    margin-bottom: 20px;
+  }
+  .selectArea {
+    margin-bottom: 20px;
+  }
+}

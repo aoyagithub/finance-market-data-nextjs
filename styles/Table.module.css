@@ -1,0 +1,55 @@
+.positive {
+  color: #1cc40d;
+}
+.negative {
+  color: #f35c5c;
+}
+.active {
+  background-color: #dddada;
+}
+.table {
+  width: 48%;
+  border-collapse: collapse;
+  font-size: 16px;
+}
+.th {
+  font-weight: 400;
+  text-align: left;
+}
+.tr {
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+}
+.trHeading {
+  border-bottom: 1px solid #d9d9d9;
+  color: #555;
+}
+.trHeadingTh {
+  font-weight: 400;
+  font-size: 12px;
+  text-align: right;
+}
+.last {
+  text-align: right;
+}
+.change,
+.chg {
+  text-align: right;
+}
+.tr:not(.trHeading) > .th,
+.tr:not(.trHeading) > .last,
+.tr:not(.trHeading) > .change,
+.tr:not(.trHeading) > .chg {
+  padding: 4px;
+}
+@media (max-width: 768px) {
+  .table {
+    width: 100%;
+  }
+  .tr:not(.trHeading) > .th,
+  .tr:not(.trHeading) > .last,
+  .tr:not(.trHeading) > .change,
+  .tr:not(.trHeading) > .chg {
+    padding: 1%;
+  }
+}

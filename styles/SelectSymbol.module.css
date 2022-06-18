@@ -1,0 +1,9 @@
+.select {
+  height: 30px;
+  line-height: 30px;
+}
+@media (max-width: 768px) {
+  .select {
+    margin-left: 2px;
+  }
+}
