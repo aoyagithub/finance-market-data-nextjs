@@ -27,7 +27,7 @@ export const Chart = ({
 
       const formattedDate =
         selectedRange === "1d"
-          ? dayjs(date).format("HH:mm a")
+          ? dayjs(date).format("h:mm a")
           : dayjs(date).format("MMM D");
 
       return formattedDate;
