@@ -32,27 +32,38 @@ export const Table = ({
     let last = null;
     let change = null;
     let chg = null;
-
-    if (symbol !== "euro") {
+    if (symbol[0] !== "euro") {
       last =
-        data && data.chart[symbol].data.chart.result[0].meta.regularMarketPrice;
+        data &&
+        data.chart[symbol].data.chart.result[0].meta.regularMarketPrice.toFixed(
+          2
+        );
       change =
         data &&
-        data.quote[symbol].data.quoteResponse.result[0].regularMarketChange;
+        data.quote[
+          symbol
+        ].data.quoteResponse.result[0].regularMarketChange.toFixed(2);
       chg =
         data &&
-        data.quote[symbol].data.quoteResponse.result[0]
-          .regularMarketChangePercent;
+        data.quote[
+          symbol
+        ].data.quoteResponse.result[0].regularMarketChangePercent.toFixed(2);
     } else {
       last =
-        data && data.chart[symbol].data.chart.result[0].meta.regularMarketPrice;
+        data &&
+        data.chart[symbol].data.chart.result[0].meta.regularMarketPrice.toFixed(
+          4
+        );
       change =
         data &&
-        data.quote[symbol].data.quoteResponse.result[0].regularMarketChange;
+        data.quote[
+          symbol
+        ].data.quoteResponse.result[0].regularMarketChange.toFixed(4);
       chg =
         data &&
-        data.quote[symbol].data.quoteResponse.result[0]
-          .regularMarketChangePercent;
+        data.quote[
+          symbol
+        ].data.quoteResponse.result[0].regularMarketChangePercent.toFixed(4);
     }
     const changeFlag =
       Math.sign(change) === 1 ? styles.positive : styles.negative;
