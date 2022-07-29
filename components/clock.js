@@ -18,7 +18,7 @@ export const Clock = () => {
       const time = new Date().toLocaleString("en-US", {
         timeZone: "America/New_York",
       });
-      setHour(dayjs(time).format("H"));
+      setHour(dayjs(time).format("h"));
       setMinute(dayjs(time).format("mm A"));
       setDate(dayjs(time).format("M/D/YY"));
     };
